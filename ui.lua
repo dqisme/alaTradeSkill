@@ -3408,7 +3408,7 @@ end
 
 function LT_WidgetMethod.Tab_OnClick(self)
 	local pname = self.pname;
-	if pname ~= nil and not DataAgent.is_name_same_skill(pname, Frame.F_GetSkillName()) then
+	if pname ~= nil and not DataAgent.is_name_same_skill(pname, self.Frame.F_GetSkillName()) then
 		if pname == '@explorer' then
 			MT.ToggleFrame("EXPLORER");
 		elseif pname == '@config' then
